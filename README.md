@@ -10,6 +10,7 @@ An ultra-fast, asynchronous data pipeline engineered to ingest distributed asset
 Below is the execution flow showcasing the pipeline's performance and data synchronization capabilities:
 
 
+https://github.com/user-attachments/assets/05de566a-23eb-4813-ae9b-c7bbab69ebaf
 
 
 ---
