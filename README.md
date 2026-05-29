@@ -1,7 +1,5 @@
 # high-speed-metadata-ranker-portfolio-video-only-edition-
 
-# High-Speed Metadata Ranker (Portfolio Video)
-
 An ultra-fast, asynchronous data pipeline engineered to ingest distributed asset datasets, calculate statistical trait weights in real-time, and generate absolute rarity ranks faster than centralized marketplace indexers.
 
 ---
