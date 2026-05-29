@@ -16,15 +16,15 @@ https://github.com/user-attachments/assets/ef7e77af-732d-497f-8286-871fe8908690
 ---
 
 ## 🛠 Architecture & Ingestion Methods
-To ensure maximum fault tolerance and bypass marketplace synchronization delays, the engine implements a hybrid data retrieval architecture utilizing two independent ingestion methods:
+To ensure comprehensive data retrieval and deep asset analysis, the engine implements a dual-stream ingestion architecture relying on official platform endpoints:
 
-1. **Direct API v2 Stream**: Real-time integration with primary registry endpoints to capture immediate asset state changes and transaction logs.
-2. **Decentralized Metadata Fallback**: Direct extraction of raw metadata schemas directly from IPFS/decentralized storage networks, completely bypassing native marketplace delays.
+1. **Direct API v2 Stream**: Real-time integration with primary registry endpoints to capture immediate asset state changes and transaction events.
+2. **Metadata API Pipeline**: Parallel processing of raw asset metadata schemas directly from specialized metadata endpoints to extract full trait variations simultaneously.
 
 ## 🚀 Analytical Core & Ranking Logic
-* **Autonomous Calculation**: The system operates independently of external marketplace ranking databases. It maps the entire collection schema locally and computes mathematical rarity distributions instantly.
+* **Autonomous Calculation**: The system operates independently of external marketplace ranking databases. It maps the entire collection schema locally and computes mathematical rarity distributions instantly upon receiving raw metadata.
 * **Mathematical Precision**: Ranks are generated based on true statistical combinatorial weights. 
-* *Note on Accuracy*: Due to dynamic collection adjustments (such as unrevealed traits or contract-level metadata modifications), minor calculation tolerances/deviations may occasionally occur compared to post-factum indexed marketplace ranks. This is a technical tradeoff optimized for raw front-running speed.
+* *Note on Accuracy*: Due to dynamic collection adjustments (such as unrevealed traits or contract-level metadata modifications), minor calculation tolerances/deviations may occasionally occur compared to post-factum indexed marketplace ranks. This is a technical tradeoff optimized for raw local processing speed.
 
 ---
 
@@ -38,5 +38,5 @@ This repository serves exclusively as a verified architectural benchmark, proof-
 
 ## 💻 Tech Stack Overview
 * **Runtime**: Asynchronous Event-Loop Architecture (Python)
-* **Networking**: Optimized HTTP/2 connection pooling and WebSocket routines for low-latency streaming.
+* **Networking**: Optimized HTTP connection pooling and parallel API request routines for maximum throughput.
 * **Data Processing**: High-performance in-memory data structures for real-time statistical sorting.
